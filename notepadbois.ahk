@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ^1::
 
-Run,  D:\Repos\GitHub\NetworkSecurity\cookies.txt
+Run,  D:\Repos\GitHub\NetworkSecurity\cookies.txt,,, pid
 
 Sleep, 1000
 
@@ -14,5 +14,7 @@ Sleep, 1000
 SendInput ^v
 
 SendInput ^s
+
+WinClose, % "ahk_pid " pid
 
 Exit
