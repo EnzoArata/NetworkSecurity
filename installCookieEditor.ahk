@@ -21,3 +21,15 @@ Send {Click, 371, 24};
 sleep, 3000 ;
 
 
+Run,  D:\Repos\GitHub\NetworkSecurity\cookies.txt,,, pid
+
+Sleep, 1000
+
+
+SendInput ^v
+Sleep, 500
+SendInput ^s
+Sleep, 500
+
+WinClose, % "ahk_pid " pid
+
