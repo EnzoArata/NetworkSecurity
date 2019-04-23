@@ -9,22 +9,15 @@ CoordMode, ToolTip, Screen  ;
 Run chrome.exe "https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en"
 WinWait, Chrome
 WinMaximize
-sleep, 1000 ;
+sleep, 3000 ;
 Send {Click, 1390, 268};
-sleep, 1000 ;
+sleep, 3000 ;
 Send {Click, 270, 214};
-//WinRestore, A
-//WinMove, 0, 0
-//sleep, 1000 ;
-//WinGetActiveTitle, Title
-//WinMove,%Title%,,650,0,650,650
+Run chrome.exe "https://facebook.com"
+sleep, 3000 ;
+Send {Click, 1823, 62};
+sleep, 3000 ;
+Send {Click, 371, 24};
+sleep, 3000 ;
 
-//sleep, 3000 ;
-//Run chrome.exe "https://facebook.com"
-
-//sleep, 3000 ;
-//Send {Click, 1805, 75};
-
-//sleep, 3000 ;
-//Send {Click, 1547, 110};
 
