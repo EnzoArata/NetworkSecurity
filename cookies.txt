@@ -1,0 +1,35 @@
+min
+return
+To have a program use a specific folder as its working directory, consider this Win+C hotkey which creates a command prompt window in the specified directory:
+
+#c::Run, %comspec% /k, C:\My Documents
+In the above example, comspec is a built-in variable that resolves to C:\Windows\system32\cmd.exe on a typical system.
+
+To pass parameters, add them immediately after the name of the program or document as in these examples:
+
+Run, %comspec% /c dir >"Output File.txt", C:\My Documents
+Run, Notepad.exe "C:\My Documents\Address List.txt"
+Run, "%A_AhkPath%" "C:\Scripts\Test Script.ahk" param1 "param2 with spaces" param3
+In the second and third examples above, parameters with spaces in them are enclosed in quotes, which is generally the safest practice. By contrast, the working directory should not be enclosed in quotes even if it contains spaces, such as in the first example above.
+
+Certain special words known as system verbs are also supported. The first example below opens the Explorer's properties dialog for the indicated file. The second example prints the specified document.
+
+Run, properties "C:\Address List.txt"
+Run, print "C:\Address List.txt"min
+return
+To have a program use a specific folder as its working directory, consider this Win+C hotkey which creates a command prompt window in the specified directory:
+
+#c::Run, %comspec% /k, C:\My Documents
+In the above example, comspec is a built-in variable that resolves to C:\Windows\system32\cmd.exe on a typical system.
+
+To pass parameters, add them immediately after the name of the program or document as in these examples:
+
+Run, %comspec% /c dir >"Output File.txt", C:\My Documents
+Run, Notepad.exe "C:\My Documents\Address List.txt"
+Run, "%A_AhkPath%" "C:\Scripts\Test Script.ahk" param1 "param2 with spaces" param3
+In the second and third examples above, parameters with spaces in them are enclosed in quotes, which is generally the safest practice. By contrast, the working directory should not be enclosed in quotes even if it contains spaces, such as in the first example above.
+
+Certain special words known as system verbs are also supported. The first example below opens the Explorer's properties dialog for the indicated file. The second example prints the specified document.
+
+Run, properties "C:\Address List.txt"
+Run, print "C:\Address List.txt"
