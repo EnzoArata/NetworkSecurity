@@ -33,5 +33,6 @@ Send {Click, 301, 86}
 SendInput ^v
 sleep, 800 
 Send {Click, 270, 586}
-
+sleep, 800 
+Send {Click, -1174, -13}
 
