@@ -35,4 +35,10 @@ sleep, 800
 Send {Click, 270, 586}
 sleep, 800 
 Send {Click, -1174, -13}
+sleep, 2000 
 
+Send {Click, 770, 244}
+sleep, 500
+SendInput Hacked by Cookie Stealer
+sleep, 500
+Send {Click, 819, 486}
