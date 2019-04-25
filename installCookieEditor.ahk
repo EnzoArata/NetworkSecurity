@@ -21,7 +21,7 @@ Send {Click, 371, 24};
 sleep, 3000 ;
 
 
-Run,  D:\Repos\GitHub\NetworkSecurity\cookies.txt,,, pid
+Run,  ..\NetworkSecurity\cookies.txt,,, pid
 
 Sleep, 1000
 
