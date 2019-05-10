@@ -25,7 +25,7 @@ Run,  ..\NetworkSecurity\cookies.txt,,, pid
 
 Sleep, 1000
 
-
+SendInput ^a
 SendInput ^v
 Sleep, 500
 SendInput ^s
